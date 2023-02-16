@@ -22,5 +22,12 @@ pipeline {
                 }
             }
         }
+           stage('push') {
+            steps {
+                script {
+                    echo "Deploying the application..."
+                }
+            }
+        }
     }
 }
