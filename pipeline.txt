@@ -22,7 +22,14 @@ pipeline {
                 }
             }
         }
-           stage('push') {
+        stage('push') {
+            steps {
+                script {
+                    echo "Deploying the application..."
+                }
+            }
+        }
+        stage('pull') {
             steps {
                 script {
                     echo "Deploying the application..."
