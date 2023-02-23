@@ -43,5 +43,12 @@ pipeline {
                 }
             }
         }
+        stage('run') {
+            steps {
+                script {
+                    echo "Deploying the application..."
+                }
+            }
+        }
     }
 }
